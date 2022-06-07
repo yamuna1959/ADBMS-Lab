@@ -1,0 +1,10 @@
+DECLARE
+A INT;
+B INT;
+C INT;
+BEGIN
+A:=:A;
+B:=:B;
+C:=A+B;
+DBMS_OUTPUT.PUT_LINE(C);
+END;

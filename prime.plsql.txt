@@ -1,0 +1,22 @@
+declare
+n number(20);
+i number(20);
+m number(20);
+begin
+n:=:n;
+i:=2;
+m:=1;
+for i in 2..n/2
+loop
+if mod(n,i)=0 then
+m:=0;
+exit;
+end if;
+end loop;
+if m=1
+then
+dbms_output.put_line(n||' number is prime');
+else
+dbms_output.put_line(n||' number is not prime');
+end if;
+end;
